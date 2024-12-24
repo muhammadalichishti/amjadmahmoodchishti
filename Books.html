@@ -1,0 +1,1217 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO Premium plugin v23.9 (Yoast SEO v24.1) - https://yoast.com/wordpress/plugins/seo/ -->
+	<link rel="canonical" href="https://aliabdaal.com/book-notes/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Book Summaries Archive" />
+	<meta property="og:url" content="https://aliabdaal.com/book-notes/" />
+	<meta property="og:site_name" content="Ali Abdaal" />
+	<meta property="og:image" content="https://aliabdaal.com/wp-content/uploads/2023/02/ali-abdaal-ultimate-guide-to-youtube-camera-confidence.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="563" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@aliabdaal" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://aliabdaal.com/book-notes/","url":"https://aliabdaal.com/book-notes/","name":"Book Summaries Archive - Ali Abdaal","isPartOf":{"@id":"https://aliabdaal.com/#website"},"primaryImageOfPage":{"@id":"https://aliabdaal.com/book-notes/#primaryimage"},"image":{"@id":"https://aliabdaal.com/book-notes/#primaryimage"},"thumbnailUrl":"https://aliabdaal.com/wp-content/uploads/2023/01/Die-with-Zero.jpeg","breadcrumb":{"@id":"https://aliabdaal.com/book-notes/#breadcrumb"},"inLanguage":"en-US"},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://aliabdaal.com/book-notes/#primaryimage","url":"https://aliabdaal.com/wp-content/uploads/2023/01/Die-with-Zero.jpeg","contentUrl":"https://aliabdaal.com/wp-content/uploads/2023/01/Die-with-Zero.jpeg","width":600,"height":904},{"@type":"BreadcrumbList","@id":"https://aliabdaal.com/book-notes/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aliabdaal.com/"},{"@type":"ListItem","position":2,"name":"Book Summaries"}]},{"@type":"WebSite","@id":"https://aliabdaal.com/#website","url":"https://aliabdaal.com/","name":"Ali Abdaal","description":"","publisher":{"@id":"https://aliabdaal.com/#/schema/person/ca4c22a9bbf9f463bfd731d1188dc16d"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://aliabdaal.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":["Person","Organization"],"@id":"https://aliabdaal.com/#/schema/person/ca4c22a9bbf9f463bfd731d1188dc16d","name":"Ali Abdaal","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://aliabdaal.com/#/schema/person/image/","url":null,"contentUrl":null,"width":null,"height":null,"caption":"Ali Abdaal"},"logo":{"@id":"https://aliabdaal.com/#/schema/person/image/"},"description":"I'm an ex-doctor turned YouTuber, Podcaster, entrepreneur and author. I've been creating YouTube videos for over 7 years and have a following of over 6 million over on my main channel.","sameAs":["https://aliabdaal.com","https://www.facebook.com/aliabdaal","https://www.instagram.com/AliAbdaal/","https://www.linkedin.com/in/ali-abdaal/","https://x.com/aliabdaal","https://www.youtube.com/aliabdaal"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<title>Book Summaries Archive - Ali Abdaal</title><link rel="preload" data-rocket-preload as="image" href="https://aliabdaal.com/wp-content/uploads/2024/09/book_notes.png" imagesrcset="https://aliabdaal.com/wp-content/uploads/2024/09/book_notes.png 956w, https://aliabdaal.com/wp-content/uploads/2024/09/book_notes-300x232.png 300w, https://aliabdaal.com/wp-content/uploads/2024/09/book_notes-768x594.png 768w" imagesizes="(max-width: 956px) 100vw, 956px" fetchpriority="high">
+
+<link rel="alternate" type="application/rss+xml" title="Ali Abdaal &raquo; Feed" href="https://aliabdaal.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ali Abdaal &raquo; Comments Feed" href="https://aliabdaal.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ali Abdaal &raquo; Book Summaries Feed" href="https://aliabdaal.com/book-notes/feed/" />
+<style id='wp-block-site-logo-inline-css'>
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}
+</style>
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+</style>
+<style id='rckbs-block-core/group-parent-inline-css'>
+.wp-block-group.alignfull,.editor-styles-wrapper .wp-block-group.alignfull{margin-top:0;margin-bottom:0;padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)}.wp-block-group.is-style-shadow{box-shadow:0px 48px 64px -20px rgba(0,0,0,.2)}.wp-block-group.has-background.alignwide{max-width:calc(var(--wp--style--global--wide-size) + 2*var(--wp--preset--spacing--x-large)) !important;padding-left:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--x-large)}
+
+</style>
+<link data-minify="1" rel='stylesheet' id='rckbs-block-core/group-child-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/themes/ali-abdaal/assets/css/blocks/core/group.css?ver=1734707039' media='all' />
+<style id='wp-block-button-inline-css'>
+.wp-block-button__link{box-sizing:border-box;cursor:pointer;display:inline-block;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:initial;background-image:none}
+</style>
+<link data-minify="1" rel='stylesheet' id='rckbs-block-core/button-parent-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/themes/rckbs/assets/css/blocks/core/button.css?ver=1734707039' media='all' />
+<style id='wp-block-buttons-inline-css'>
+.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-button.aligncenter{text-align:center}
+</style>
+<style id='rckbs-block-core/buttons-child-inline-css'>
+.wp-block-button.is-style-button-text-arrow .wp-element-button {
+  background-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--wp--preset--color--foreground-1);
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  position: relative;
+  font-weight: 500;
+}
+.wp-block-button.is-style-button-text-arrow .wp-element-button::after {
+  content: "";
+  background-color: var(--wp--preset--color--foreground-1);
+  display: block;
+  position: absolute;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  -webkit-mask: url("/wp-content/themes/ali-abdaal/assets/css/blocks/core/../../../images/icons/arrow-right.svg");
+  mask: url("/wp-content/themes/ali-abdaal/assets/css/blocks/core/../../../images/icons/arrow-right.svg");
+  width: 18px !important;
+  height: 18px !important;
+  transform: scale(0.85);
+  right: -32px;
+  top: calc(50% - 6px);
+  transition: all ease-in-out 0.2s;
+}
+.wp-block-button.is-style-button-text-arrow .wp-element-button:hover {
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--wp--preset--color--foreground-1);
+}
+.wp-block-button.is-style-button-text-arrow .wp-element-button:hover::after {
+  background-color: var(--wp--preset--color--foreground-1);
+  right: -38px;
+}
+
+.podcast-subscribe-buttons a {
+  padding: 12px 24px 10px;
+}
+.podcast-subscribe-buttons a img {
+  margin-right: 0.5em;
+}
+
+.podcast-archive-sidebar .podcast-subscribe-buttons {
+  width: 100%;
+}
+.podcast-archive-sidebar .podcast-subscribe-buttons a {
+  text-align: left;
+  width: 100%;
+}
+.podcast-archive-sidebar .podcast-subscribe-buttons a:hover {
+  background-color: var(--wp--preset--color--foreground-1) !important;
+}
+
+@media screen and (max-width: 780px) {
+  .mobile-buttons-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile-buttons-stack a,
+  .mobile-buttons-stack .wp-block-button {
+    width: 100%;
+  }
+}
+
+</style>
+<style id='wp-block-navigation-link-inline-css'>
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
+</style>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+</style>
+<style id='wp-block-separator-inline-css'>
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+</style>
+<link rel='stylesheet' id='wp-block-image-css' href='https://aliabdaal.com/wp-includes/blocks/image/style.min.css?ver=6.7.1' media='all' />
+<style id='rckbs-block-core/image-parent-inline-css'>
+figure.wp-block-image{line-height:1}.wp-block-post-content>.wp-block-image,.wp-block-post-content>.wp-block-gallery{margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large);line-height:1}.wp-block-image.alignwide{margin-top:var(--wp--preset--spacing--x-large);margin-bottom:var(--wp--preset--spacing--x-large)}.wp-block-image.alignleft{margin-bottom:var(--wp--preset--spacing--small)}.wp-block-image.alignright{margin-bottom:var(--wp--preset--spacing--small)}html .is-layout-flex .wp-block-image{flex-shrink:0}
+
+</style>
+<style id='wp-block-columns-inline-css'>
+.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+</style>
+<style id='rckbs-block-core/columns-parent-inline-css'>
+.is-style-equal-height>div{display:flex;align-self:stretch !important;align-content:stretch !important;width:100%;flex-direction:column}.is-style-equal-height>div>div{width:100%;height:100%}@media only screen and (max-width: 781px){.is-style-mobile-columns-reverse{flex-direction:column-reverse}}
+
+</style>
+<style id='rckbs-block-core/columns-child-inline-css'>
+@media screen and (max-width: 780px) {
+  .is-style-mobile-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .is-style-mobile-reverse .wp-block-column {
+    width: 100% !important;
+  }
+}
+
+</style>
+<style id='outermost-mega-menu-style-inline-css'>
+.wp-block-outermost-mega-menu .wp-block-outermost-mega-menu__toggle{background-color:initial;border:none;color:currentColor;cursor:pointer;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;line-height:inherit;padding:0;text-align:left;text-transform:inherit}.wp-block-outermost-mega-menu .wp-block-outermost-mega-menu__toggle .wp-block-outermost-mega-menu__toggle-icon{align-self:center;display:inline-block;font-size:inherit;height:.6em;line-height:0;margin-left:.25em;padding:0;width:.6em}.wp-block-outermost-mega-menu .wp-block-outermost-mega-menu__toggle .wp-block-outermost-mega-menu__toggle-icon svg{stroke:currentColor;display:inline-block;height:inherit;margin-top:.075em;transform:rotate(-90deg);transition:all .1s linear;width:inherit}.wp-block-outermost-mega-menu .wp-block-outermost-mega-menu__toggle[aria-expanded=true] .wp-block-outermost-mega-menu__toggle-icon svg{transform:rotate(0deg)}.wp-block-outermost-mega-menu .wp-block-outermost-mega-menu__toggle[aria-expanded=true]~.wp-block-outermost-mega-menu__menu-container{opacity:1;overflow:visible;visibility:visible}
+
+</style>
+<link data-minify="1" rel='stylesheet' id='outermost-mega-menu-view-style-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/mega-menu-block-main/build/index.css?ver=1734707039' media='all' />
+<link rel='stylesheet' id='wp-block-navigation-css' href='https://aliabdaal.com/wp-includes/blocks/navigation/style.min.css?ver=6.7.1' media='all' />
+<link data-minify="1" rel='stylesheet' id='rckbs-block-core/navigation-child-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/themes/ali-abdaal/assets/css/blocks/core/navigation.css?ver=1734707039' media='all' />
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+</style>
+<style id='cc-carousel-controls-style-inline-css'>
+.cc_carousel--controls {
+  display: flex;
+  gap: 16px;
+}
+.cc_carousel--controls .cc_carousel--controls--button {
+  border: none;
+  background-color: var(--wp--preset--color--tertiary);
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cc_carousel--controls .cc_carousel--controls--button::after {
+  content: "";
+  background-color: var(--wp--preset--color--foreground-1);
+  display: block;
+  position: static;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  -webkit-mask: url("/wp-content/themes/ali-abdaal/assets/cc_blocks/cc_carousel_controls/../../images/icons/carousel_arrow.svg");
+  mask: url("/wp-content/themes/ali-abdaal/assets/cc_blocks/cc_carousel_controls/../../images/icons/carousel_arrow.svg");
+  width: 18px !important;
+  height: 16px !important;
+  transition: all ease-in-out 0.2s;
+}
+.cc_carousel--controls .cc_carousel--controls--button.cc_carousel--controls-prev::after {
+  transform: rotate(180deg);
+}
+.cc_carousel--controls .cc_carousel--controls--button:hover {
+  transform: scale(1.1);
+  background-color: var(--wp--preset--color--primary);
+}
+
+</style>
+<link data-minify="1" rel='stylesheet' id='cc-carousel-style-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/themes/ali-abdaal/assets/cc_blocks/cc_carousel/style.css?ver=1734707067' media='all' />
+<link data-minify="1" rel='stylesheet' id='cc-carousel-style-2-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/themes/ali-abdaal/assets/cc_blocks/cc_carousel/flickity.css?ver=1734707067' media='all' />
+<style id='wp-block-post-featured-image-inline-css'>
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image :where(img){box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:initial}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}.wp-block-post-featured-image:where(.alignleft,.alignright){width:100%}
+</style>
+<style id='wp-block-post-title-inline-css'>
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-post-template-inline-css'>
+.wp-block-post-template{list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid{grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}
+</style>
+<style id='rckbs-block-core/query-child-inline-css'>
+.wp-block-query .is-layout-grid li {
+  display: flex;
+}
+.wp-block-query .is-layout-grid li .wp-block-post-excerpt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wp-block-query .is-layout-grid li .wp-block-post-excerpt .wp-block-post-excerpt__more-link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  text-decoration: underline;
+}
+.wp-block-query .is-layout-grid li .wp-block-post-excerpt .wp-block-post-excerpt__more-link::after {
+  content: "";
+  background-color: var(--wp--preset--color--foreground-1);
+  display: block;
+  position: static;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  -webkit-mask: url("/wp-content/themes/ali-abdaal/assets/css/blocks/core/../../../images/icons/arrow-right.svg");
+  mask: url("/wp-content/themes/ali-abdaal/assets/css/blocks/core/../../../images/icons/arrow-right.svg");
+  width: 18px !important;
+  height: 18px !important;
+  transform: scale(0.85);
+  right: -32px;
+  top: calc(50% - 6px);
+  transition: all ease-in-out 0.2s;
+}
+.wp-block-query .is-layout-grid li .wp-block-post-excerpt .wp-block-post-excerpt__more-link:hover {
+  text-decoration: none;
+  gap: 24px;
+}
+
+</style>
+<link rel='stylesheet' id='gravity_forms_theme_reset-css' href='https://aliabdaal.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css?ver=2.9.1' media='all' />
+<link rel='stylesheet' id='gravity_forms_theme_foundation-css' href='https://aliabdaal.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css?ver=2.9.1' media='all' />
+<link data-minify="1" rel='stylesheet' id='gravity_forms_theme_framework-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-framework.min.css?ver=1734707039' media='all' />
+<link rel='stylesheet' id='gravity_forms_orbital_theme-css' href='https://aliabdaal.com/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-orbital-theme.min.css?ver=2.9.1' media='all' />
+<link rel='stylesheet' id='wp-block-social-links-css' href='https://aliabdaal.com/wp-includes/blocks/social-links/style.min.css?ver=6.7.1' media='all' />
+<style id='rckbs-block-core/social-links-child-inline-css'>
+.wp-block-social-links .wp-social-link a{padding:.5em}
+
+</style>
+<style id='wp-block-spacer-inline-css'>
+.wp-block-spacer{clear:both}
+</style>
+<style id='rckbs-block-core/spacer-parent-inline-css'>
+.wp-block-spacer:after{clear:both;display:table-cell;content:""}
+
+</style>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://aliabdaal.com/wp-includes/css/dist/block-library/common.min.css?ver=6.7.1' media='all' />
+<link data-minify="1" rel='stylesheet' id='convertkit-broadcasts-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/convertkit/resources/frontend/css/broadcasts.css?ver=1734707039' media='all' />
+<link data-minify="1" rel='stylesheet' id='convertkit-button-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/convertkit/resources/frontend/css/button.css?ver=1734707039' media='all' />
+<link data-minify="1" rel='stylesheet' id='convertkit-form-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/convertkit/resources/frontend/css/form.css?ver=1734707039' media='all' />
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #5DCDF1;--wp--preset--color--secondary: #FD976D;--wp--preset--color--background-1: #FFFFFF;--wp--preset--color--background-2: #F9F6F3;--wp--preset--color--background-3: #F3EDE9;--wp--preset--color--background-4: #ECE5E1;--wp--preset--color--foreground-1: #1B1624;--wp--preset--color--foreground-2: #54505B;--wp--preset--color--foreground-3: #76737C;--wp--preset--color--foreground-4: #8D8A91;--wp--preset--color--tertiary: #FDD46B;--wp--preset--color--accent: #C9B1FB;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--hard-vertical-background-1-to-foreground-1: linear-gradient(to bottom,var(--wp--preset--color--background-1) 50%,var(--wp--preset--color--foreground-1) 50%);--wp--preset--gradient--hard-vertical-foreground-1-to-background-1: linear-gradient(to bottom,var(--wp--preset--color--foreground-1) 50%,var(--wp--preset--color--background-1) 50%);--wp--preset--gradient--hard-horizontal-background-1-to-foreground-1: linear-gradient(to right,var(--wp--preset--color--background-1) 50%,var(--wp--preset--color--foreground-1) 50%);--wp--preset--gradient--hard-horizontal-foreground-1-to-background-1: linear-gradient(to right,var(--wp--preset--color--foreground-1) 50%,var(--wp--preset--color--background-1) 50%);--wp--preset--gradient--hard-vertical-background-1-to-background-2: linear-gradient(to bottom,var(--wp--preset--color--background-1) 50%,var(--wp--preset--color--background-2) 50%);--wp--preset--gradient--hard-vertical-background-2-to-background-1: linear-gradient(to bottom,var(--wp--preset--color--background-2) 50%,var(--wp--preset--color--background-1) 50%);--wp--preset--font-size--small: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.227), 1.125rem);--wp--preset--font-size--medium: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.455), 1.375rem);--wp--preset--font-size--large: clamp(1.5rem, 1.5rem + ((1vw - 0.2rem) * 2.045), 2.625rem);--wp--preset--font-size--x-large: clamp(2rem, 2rem + ((1vw - 0.2rem) * 3.636), 4rem);--wp--preset--font-size--xx-large: clamp(3rem, 3rem + ((1vw - 0.2rem) * 4.091), 5.25rem);--wp--preset--font-family--base: "Elza", sans-serif;--wp--preset--font-family--heading: "Recoleta", serif;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--cardo: Cardo;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--spacing--x-small: clamp(0.5rem, 1.5vw, 1rem);--wp--preset--spacing--small: clamp(0.75rem, 2vw, 1.5rem);--wp--preset--spacing--medium: clamp(1rem, 2.5vw, 2rem);--wp--preset--spacing--large: clamp(1.25rem, 4vw, 3rem);--wp--preset--spacing--x-large: clamp(1.5rem, 6.5vw, 4rem);--wp--preset--spacing--xx-large: clamp(2rem, 7.5vw, 6rem);--wp--preset--spacing--giant: clamp(2rem, 8vw, 7.5rem);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);--wp--custom--line-height--one: 1;--wp--custom--line-height--tiny: 1.1;--wp--custom--line-height--small: 1.25;--wp--custom--line-height--medium: 1.4;--wp--custom--line-height--normal: 1.6;--wp--custom--line-height--large: 2;--wp--custom--font-weight--thin: 100;--wp--custom--font-weight--extra-light: 200;--wp--custom--font-weight--light: 300;--wp--custom--font-weight--regular: 400;--wp--custom--font-weight--medium: 500;--wp--custom--font-weight--semi-bold: 600;--wp--custom--font-weight--bold: 700;--wp--custom--font-weight--extra-bold: 800;--wp--custom--font-weight--black: 900;--wp--custom--border-radius--tiny: 3px;--wp--custom--border-radius--small: 8px;--wp--custom--border-radius--medium: 24px;--wp--custom--border-radius--large: clamp(1.25rem, 2.5vw, 2rem);--wp--custom--border-radius--round: 9999px;--wp--custom--border-radius--circle: 50%;}:root { --wp--style--global--content-size: 700px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: var(--wp--preset--spacing--small); margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: var(--wp--preset--spacing--small); }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--small);margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--small);margin-block-end: 0;}:root :where(.is-layout-flex){gap: var(--wp--preset--spacing--small);}:root :where(.is-layout-grid){gap: var(--wp--preset--spacing--small);}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--background-1);color: var(--wp--preset--color--foreground-1);font-family: var(--wp--preset--font-family--base);font-size: var(--wp--preset--font-size--small);font-weight: var(--wp--custom--font-weight--medium);line-height: var(--wp--custom--line-height--normal);--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--large);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--large);}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--foreground-1);text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){color: var(--wp--preset--color--foreground-1);text-decoration: none;}h1, h2, h3, h4, h5, h6{font-family: var(--wp--preset--font-family--heading);font-weight: var(--wp--custom--font-weight--medium);letter-spacing: -0.03em;line-height: var(--wp--custom--line-height--small);margin-top: var(--wp--preset--spacing--medium);}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--large);margin-top: var(--wp--preset--spacing--x-large);}h3{font-size: var(--wp--preset--font-size--medium);margin-top: var(--wp--preset--spacing--large);}h4{font-size: var(--wp--preset--font-size--small);font-weight: var(--wp--custom--font-weight--semi-bold);}h5{font-size: var(--wp--preset--font-size--small);text-transform: uppercase;}h6{font-size: var(--wp--preset--font-size--small);}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--primary);border-radius: var(--wp--custom--border-radius--round);border-width: 0;color: var(--wp--preset--color--foreground-1);font-family: inherit;font-size: inherit;font-weight: var(--wp--custom--font-weight--medium);line-height: inherit;padding-top: 0.7rem;padding-right: clamp(1.5rem, 1.75vw, 3.5rem);padding-bottom: 0.6rem;padding-left: clamp(1.5rem, 1.75vw, 3.5rem);text-decoration: none;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: var(--wp--preset--color--foreground-1);color: var(--wp--preset--color--background-1);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){background-color: var(--wp--preset--color--foreground-1);color: var(--wp--preset--color--background-1);}:root :where(.wp-element-button:active, .wp-block-button__link:active){background-color: var(--wp--preset--color--foreground-1);color: var(--wp--preset--color--background-1);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-background-1-color{color: var(--wp--preset--color--background-1) !important;}.has-background-2-color{color: var(--wp--preset--color--background-2) !important;}.has-background-3-color{color: var(--wp--preset--color--background-3) !important;}.has-background-4-color{color: var(--wp--preset--color--background-4) !important;}.has-foreground-1-color{color: var(--wp--preset--color--foreground-1) !important;}.has-foreground-2-color{color: var(--wp--preset--color--foreground-2) !important;}.has-foreground-3-color{color: var(--wp--preset--color--foreground-3) !important;}.has-foreground-4-color{color: var(--wp--preset--color--foreground-4) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-accent-color{color: var(--wp--preset--color--accent) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-background-1-background-color{background-color: var(--wp--preset--color--background-1) !important;}.has-background-2-background-color{background-color: var(--wp--preset--color--background-2) !important;}.has-background-3-background-color{background-color: var(--wp--preset--color--background-3) !important;}.has-background-4-background-color{background-color: var(--wp--preset--color--background-4) !important;}.has-foreground-1-background-color{background-color: var(--wp--preset--color--foreground-1) !important;}.has-foreground-2-background-color{background-color: var(--wp--preset--color--foreground-2) !important;}.has-foreground-3-background-color{background-color: var(--wp--preset--color--foreground-3) !important;}.has-foreground-4-background-color{background-color: var(--wp--preset--color--foreground-4) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-accent-background-color{background-color: var(--wp--preset--color--accent) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-background-1-border-color{border-color: var(--wp--preset--color--background-1) !important;}.has-background-2-border-color{border-color: var(--wp--preset--color--background-2) !important;}.has-background-3-border-color{border-color: var(--wp--preset--color--background-3) !important;}.has-background-4-border-color{border-color: var(--wp--preset--color--background-4) !important;}.has-foreground-1-border-color{border-color: var(--wp--preset--color--foreground-1) !important;}.has-foreground-2-border-color{border-color: var(--wp--preset--color--foreground-2) !important;}.has-foreground-3-border-color{border-color: var(--wp--preset--color--foreground-3) !important;}.has-foreground-4-border-color{border-color: var(--wp--preset--color--foreground-4) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-accent-border-color{border-color: var(--wp--preset--color--accent) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-hard-vertical-background-1-to-foreground-1-gradient-background{background: var(--wp--preset--gradient--hard-vertical-background-1-to-foreground-1) !important;}.has-hard-vertical-foreground-1-to-background-1-gradient-background{background: var(--wp--preset--gradient--hard-vertical-foreground-1-to-background-1) !important;}.has-hard-horizontal-background-1-to-foreground-1-gradient-background{background: var(--wp--preset--gradient--hard-horizontal-background-1-to-foreground-1) !important;}.has-hard-horizontal-foreground-1-to-background-1-gradient-background{background: var(--wp--preset--gradient--hard-horizontal-foreground-1-to-background-1) !important;}.has-hard-vertical-background-1-to-background-2-gradient-background{background: var(--wp--preset--gradient--hard-vertical-background-1-to-background-2) !important;}.has-hard-vertical-background-2-to-background-1-gradient-background{background: var(--wp--preset--gradient--hard-vertical-background-2-to-background-1) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-base-font-family{font-family: var(--wp--preset--font-family--base) !important;}.has-heading-font-family{font-family: var(--wp--preset--font-family--heading) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-cardo-font-family{font-family: var(--wp--preset--font-family--cardo) !important;}
+:root :where(.wp-block-post-template h2){font-size: var(--wp--preset--font-size--large);line-height: var(--wp--custom--line-height--tiny);}
+:root :where(.wp-block-post-title){font-weight: var(--wp--custom--font-weight--semi-bold);line-height: var(--wp--custom--line-height--tiny);}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button))){color: var(--wp--preset--color--foreground-1);text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){color: var(--wp--preset--color--primary);text-decoration: underline;}
+:root :where(.wp-block-image img, .wp-block-image .wp-block-image__crop-area, .wp-block-image .components-placeholder){border-radius: var(--wp--custom--border-radius--small);}
+:root :where(.wp-block-image .wp-element-caption,.wp-block-image  .wp-block-audio figcaption,.wp-block-image  .wp-block-embed figcaption,.wp-block-image  .wp-block-gallery figcaption,.wp-block-image  .wp-block-image figcaption,.wp-block-image  .wp-block-table figcaption,.wp-block-image  .wp-block-video figcaption){color: var(--wp--preset--color--foreground-3);font-size: var(--wp--preset--font-size--x-small);line-height: var(--wp--custom--line-height--small);margin-top: var(--wp--preset--spacing--x-small);}
+:root :where(.wp-block-separator){border-radius: 0;border-color: currentColor;border-width: 1px 0 0;border-style: solid;}
+:root :where(.wp-block-spacer){margin-top: 0;}
+:root :where(.wp-block-buttons-is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.wp-block-buttons-is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--small);margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.wp-block-buttons-is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--small);margin-block-end: 0;}:root :where(.wp-block-buttons-is-layout-flex){gap: var(--wp--preset--spacing--small);}:root :where(.wp-block-buttons-is-layout-grid){gap: var(--wp--preset--spacing--small);}
+:root :where(.wp-block-navigation){font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.227), 1rem);font-weight: var(--wp--custom--font-weight--medium);text-decoration: none;}:root :where(.wp-block-navigation-is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.wp-block-navigation-is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.wp-block-navigation-is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--small);margin-block-end: 0;}:root :where(.wp-block-navigation-is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.wp-block-navigation-is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.wp-block-navigation-is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--small);margin-block-end: 0;}:root :where(.wp-block-navigation-is-layout-flex){gap: var(--wp--preset--spacing--small);}:root :where(.wp-block-navigation-is-layout-grid){gap: var(--wp--preset--spacing--small);}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+</style>
+<style id='core-block-supports-inline-css'>
+.wp-container-core-group-is-layout-1{gap:var(--wp--preset--spacing--40);}.wp-container-core-group-is-layout-2 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-2 > * + *{margin-block-start:12px;margin-block-end:0;}.wp-container-core-group-is-layout-3{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-4{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-5{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-6{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-7{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-8 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-8 > * + *{margin-block-start:var(--wp--preset--spacing--x-small);margin-block-end:0;}.wp-container-core-group-is-layout-9 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-9 > * + *{margin-block-start:12px;margin-block-end:0;}.wp-container-core-group-is-layout-10{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-11{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-12{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-13{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-14{flex-wrap:nowrap;gap:var(--wp--preset--spacing--x-small);}.wp-container-core-group-is-layout-15 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-15 > * + *{margin-block-start:var(--wp--preset--spacing--x-small);margin-block-end:0;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;gap:2em var(--wp--preset--spacing--x-large);}.wp-container-core-group-is-layout-16 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:800px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-group-is-layout-16 > .alignwide{max-width:800px;}.wp-container-core-group-is-layout-16 .alignfull{max-width:none;}.wp-container-core-group-is-layout-16 > .alignfull{margin-right:calc(var(--wp--preset--spacing--x-large) * -1);margin-left:calc(var(--wp--preset--spacing--x-large) * -1);}.wp-container-core-group-is-layout-17{flex-wrap:nowrap;}.wp-container-core-group-is-layout-18{justify-content:space-between;}.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;gap:2em var(--wp--preset--spacing--giant);}.wp-container-core-group-is-layout-21{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-23 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-23 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-24 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:1200px;margin-left:auto !important;margin-right:auto !important;}.wp-container-core-group-is-layout-24 > .alignwide{max-width:1200px;}.wp-container-core-group-is-layout-24 .alignfull{max-width:none;}.wp-container-core-group-is-layout-25 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-25 > * + *{margin-block-start:var(--wp--preset--spacing--large);margin-block-end:0;}.wp-container-core-group-is-layout-26{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-27 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-28{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-29 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-30{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-31 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-32{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-33 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-34{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-35 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-36{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-37 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-38{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-39 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-40{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-41 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-42{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-43 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-44{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-45 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-46{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-47 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-group-is-layout-48{flex-direction:column;align-items:center;justify-content:space-between;}.wp-container-core-group-is-layout-49 > .alignfull{margin-right:calc(var(--wp--preset--spacing--medium) * -1);margin-left:calc(var(--wp--preset--spacing--medium) * -1);}.wp-container-core-post-template-is-layout-1{grid-template-columns:repeat(3, minmax(0, 1fr));}.wp-container-core-group-is-layout-53{gap:0;flex-direction:column;align-items:flex-start;}.wp-container-core-group-is-layout-54 > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:350px;margin-left:0 !important;margin-right:auto !important;}.wp-container-core-group-is-layout-54 > .alignwide{max-width:350px;}.wp-container-core-group-is-layout-54 .alignfull{max-width:none;}.wp-elements-bd6e712cc39c4cf02b2ecbc7c9b07247 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--foreground-4);}.wp-container-core-group-is-layout-55{gap:0;flex-direction:column;align-items:flex-start;}.wp-container-core-group-is-layout-56{flex-wrap:nowrap;}.wp-elements-2f2c0e588ab0ffd8e592866c158f04f2 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--foreground-3);}.wp-container-core-columns-is-layout-3{flex-wrap:nowrap;gap:2em 13.5%;}.wp-container-core-group-is-layout-60 > .alignfull{margin-right:calc(var(--wp--preset--spacing--x-small) * -1);margin-left:calc(var(--wp--preset--spacing--x-small) * -1);}.wp-container-core-column-is-layout-7 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-column-is-layout-7 > * + *{margin-block-start:var(--wp--preset--spacing--x-small);margin-block-end:0;}.wp-container-core-group-is-layout-61 > .alignfull{margin-right:calc(var(--wp--preset--spacing--x-small) * -1);margin-left:calc(var(--wp--preset--spacing--x-small) * -1);}.wp-container-core-column-is-layout-8 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-column-is-layout-8 > * + *{margin-block-start:var(--wp--preset--spacing--x-small);margin-block-end:0;}.wp-container-core-group-is-layout-62 > .alignfull{margin-right:calc(var(--wp--preset--spacing--x-small) * -1);margin-left:calc(var(--wp--preset--spacing--x-small) * -1);}.wp-container-core-column-is-layout-9 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-column-is-layout-9 > * + *{margin-block-start:var(--wp--preset--spacing--x-small);margin-block-end:0;}.wp-container-core-columns-is-layout-4{flex-wrap:nowrap;gap:var(--wp--preset--spacing--medium) var(--wp--preset--spacing--medium);}.wp-container-core-group-is-layout-63 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-63 > * + *{margin-block-start:var(--wp--preset--spacing--xx-large);margin-block-end:0;}.wp-container-core-group-is-layout-64{flex-wrap:nowrap;gap:var(--wp--preset--spacing--small);justify-content:flex-start;align-items:center;}.wp-elements-d02331140be9869bd141cc750d9b5ca8 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--foreground-3);}.wp-container-core-social-links-is-layout-1{gap:var(--wp--preset--spacing--x-small) 8px;}.wp-container-core-column-is-layout-10 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-column-is-layout-10 > * + *{margin-block-start:var(--wp--preset--spacing--small);margin-block-end:0;}.wp-elements-71062a9ae0a21ad0501fc42716e61f75 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--foreground-3);}.wp-elements-71062a9ae0a21ad0501fc42716e61f75 a:where(:not(.wp-element-button)):hover{color:var(--wp--preset--color--foreground-1);}.wp-elements-3507c8e72e299eb02f96d7f23ac72e9b a:where(:not(.wp-element-button)){color:var(--wp--preset--color--foreground-1);}.wp-elements-254d4b4eb64cfbfc7016701d076a3937 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--foreground-1);}.wp-elements-4762a9b593443f0911ca8af33e199e39 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--foreground-1);}.wp-container-core-columns-is-layout-5{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-6{flex-wrap:nowrap;gap:2em var(--wp--preset--spacing--xx-large);}.wp-elements-bb4aecfe1cba88067ca77dcf625b35b6 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--foreground-3);}.wp-elements-bb4aecfe1cba88067ca77dcf625b35b6 a:where(:not(.wp-element-button)):hover{color:var(--wp--preset--color--foreground-1);}.wp-container-core-buttons-is-layout-4{justify-content:flex-start;}.wp-elements-e64e3f843baec1e5c530c36b677a84c5 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--foreground-4);}.wp-elements-e64e3f843baec1e5c530c36b677a84c5 a:where(:not(.wp-element-button)):hover{color:var(--wp--preset--color--foreground-1);}.wp-container-core-group-is-layout-65{flex-wrap:nowrap;gap:8px;justify-content:flex-start;align-items:center;}.wp-container-core-group-is-layout-66{justify-content:space-between;}
+</style>
+<style id='wp-block-template-skip-link-inline-css'>
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+</style>
+<link data-minify="1" rel='stylesheet' id='woocommerce-layout-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=1734707039' media='all' />
+<link data-minify="1" rel='stylesheet' id='woocommerce-smallscreen-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=1734707039' media='only screen and (max-width: 768px)' />
+<link data-minify="1" rel='stylesheet' id='woocommerce-general-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=1734707039' media='all' />
+<link data-minify="1" rel='stylesheet' id='woocommerce-blocktheme-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce-blocktheme.css?ver=1734707039' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<style id='ez-toc-exclude-toggle-css-inline-css'>
+#ez-toc-container input[type="checkbox"]:checked + nav, #ez-toc-widget-container input[type="checkbox"]:checked + nav {opacity: 0;max-height: 0;border: none;display: none;}
+</style>
+<link data-minify="1" rel='stylesheet' id='ali-abdaal-main-styles-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/themes/ali-abdaal/assets/css/main.css?ver=1734707039' media='all' />
+<link data-minify="1" rel='stylesheet' id='parent-style-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/themes/rckbs/style.css?ver=1734707039' media='all' />
+<link rel='stylesheet' id='style-css' href='https://aliabdaal.com/wp-content/themes/ali-abdaal/style.css?ver=0.0.3' media='all' />
+<style id='block-visibility-screen-size-styles-inline-css'>
+/* Large screens (desktops, 992px and up) */
+@media ( min-width: 992px ) {
+	.block-visibility-hide-large-screen {
+		display: none !important;
+	}
+}
+
+/* Medium screens (tablets, between 768px and 992px) */
+@media ( min-width: 768px ) and ( max-width: 991.98px ) {
+	.block-visibility-hide-medium-screen {
+		display: none !important;
+	}
+}
+
+/* Small screens (mobile devices, less than 768px) */
+@media ( max-width: 767.98px ) {
+	.block-visibility-hide-small-screen {
+		display: none !important;
+	}
+}
+</style>
+<script src="https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/cc_blocks/cc_carousel/flickity.pkgd.min.js?ver=6.7.1" id="cc-carousel-script-js"></script>
+<script src="https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/cc_blocks/cc_carousel/flickity.init.js?ver=6.7.1" id="cc-carousel-script-2-js"></script>
+<script src="https://aliabdaal.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://aliabdaal.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script defer='defer' src="https://aliabdaal.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.9.1" id="gform_json-js"></script>
+<script id="gform_gravityforms-js-extra">
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https:\/\/aliabdaal.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/aliabdaal.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg","version_hash":"87c305b32bc731d30013a5f38024444b","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = {"1":""};
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled"},"vars":{"images_url":"https:\/\/aliabdaal.com\/wp-content\/plugins\/gravityforms\/images"}};
+</script>
+<script defer='defer' src="https://aliabdaal.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.9.1" id="gform_gravityforms-js"></script>
+<script defer='defer' src="https://aliabdaal.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=501a987060f4426fb517400c73c7fc1e" id="gform_gravityforms_utils-js"></script>
+<script defer='defer' src="https://aliabdaal.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=ddd2702ee024d421149a5e61416f1ff5" id="gform_gravityforms_theme_vendors-js"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"87c305b32bc731d30013a5f38024444b"},"ajax":{"ajaxurl":"https:\/\/aliabdaal.com\/wp-admin\/admin-ajax.php","ajax_submission_nonce":"db5ffc93b6","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again."}}}},"hmr_dev":"","public_path":"https:\/\/aliabdaal.com\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/","config_nonce":"a534041539"};
+</script>
+<script defer='defer' src="https://aliabdaal.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=434d0c7a9798b432de24db888073c55f" id="gform_gravityforms_theme-js"></script>
+<script defer='defer' src="https://aliabdaal.com/wp-content/plugins/gravityformsconvertkit/assets/js/dist/vendor-theme.min.js?ver=1.1.0" id="gform_convertkit_vendor_theme-js"></script>
+<script defer='defer' src="https://aliabdaal.com/wp-content/plugins/gravityformsconvertkit/assets/js/dist/scripts-theme.min.js?ver=1.1.0" id="gform_convertkit_theme-js"></script>
+<script id="wfco-utm-tracking-js-extra">
+var wffnUtm = {"utc_offset":"0","site_url":"https:\/\/aliabdaal.com","genericParamEvents":"{\"user_roles\":\"guest\",\"plugin\":\"Funnel Builder\"}","cookieKeys":["flt","timezone","is_mobile","browser","fbclid","gclid","referrer","fl_url","utm_source","utm_medium","utm_campaign","utm_term","utm_content"],"excludeDomain":["paypal.com","klarna.com","quickpay.net"]};
+</script>
+<script src="https://aliabdaal.com/wp-content/plugins/funnel-builder/woofunnels/assets/js/utm-tracker.min.js?ver=1.10.12.43" id="wfco-utm-tracking-js" defer data-wp-strategy="defer"></script>
+<script src="https://aliabdaal.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.5.1" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/aliabdaal.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script src="https://aliabdaal.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.5.1" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script src="https://aliabdaal.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.9.5.1" id="js-cookie-js" defer data-wp-strategy="defer"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src="https://aliabdaal.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.5.1" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="https://aliabdaal.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aliabdaal.com/xmlrpc.php?rsd" />
+<script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"https:\/\/aliabdaal.com\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=06b8f695ef48ab2d9277"}}
+</script>
+<script type="module" src="https://aliabdaal.com/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=8ff192874fc8910a284c" id="@wordpress/block-library/navigation/view-js-module"></script>
+<script type="module" src="https://aliabdaal.com/wp-content/plugins/mega-menu-block-main/build/view.js?ver=9fe73b66811680d013ac" id="outermost-mega-menu-view-script-module-js-module"></script>
+<link rel="modulepreload" href="https://aliabdaal.com/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=06b8f695ef48ab2d9277" id="@wordpress/interactivity-js-modulepreload">	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<script><!-- RightMessage -->
+(function(p, a, n, d, o, b, c) {
+  o = n.createElement('script'); o.type = 'text/javascript'; o.async = true; o.src = 'https://t.rightmessage.com/'+p+'.js';
+  b = n.getElementsByTagName('script')[0]; d = function(h, u, i) { var c = n.createElement('style'); c.id = 'rmcloak'+i;
+      c.type = 'text/css'; c.appendChild(n.createTextNode('.rmcloak'+h+'{visibility:hidden}.rmcloak'+u+'{display:none}'));
+      b.parentNode.insertBefore(c, b); return c; }; c = d('', '-hidden', ''); d('-stay-invisible', '-stay-hidden', '-stay');
+  setTimeout(o.onerror = function() { c.parentNode && c.parentNode.removeChild(c); }, a); b.parentNode.insertBefore(o, b);
+})('1918574379', 20000, document);
+</script><style class="wpcode-css-snippet">@media screen and (min-width: 1100px) {
+		.has-date-arrow--top-right {
+			position: relative;
+		}
+
+		.has-date-arrow--top-right::before {
+			content: "";
+			position: absolute;
+			top: -1em;
+			right: -9em;
+			width: 15em;
+			height: 7.5em;
+			background-image: url("https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/images/productivity-lab/summit-landing-page/pl-date-icon.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	
+			.has-date-arrow2--top-right {
+			position: relative;
+		}
+
+		.has-date-arrow2--top-right::before {
+			content: "";
+			position: absolute;
+			top: -2em;
+			right: -9em;
+			width: 15em;
+			height: 7.5em;
+			background-image: url("https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/images/productivity-lab/summit-landing-page/pl-date-icon.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	
+	
+	
+		.has-special-guests {
+			position: relative;
+		}
+
+		.has-special-guests::before {
+        content: "";
+        position: absolute;
+        bottom: -3em;
+        left: -14em;
+        width: 17em;
+        height: 7.5em;
+        background-image: url(https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/images/productivity-lab/summit-landing-page/pl-special-guests-3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 10;
+    }
+	}
+
+.z-index-adjust {
+	z-index: 10;
+}
+
+
+.bwf-countdown-inner-wrap.bwf-separator.bwf-separator-dotted .bwf-digit-card, body .bwf-countdown-inner-wrap.bwf-separator.bwf-separator-line .bwf-digit-card {
+    position: relative;
+    padding-right: 50px;
+}
+
+.pl-hover-highlight {
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+.pl-hover-highlight:hover {
+	background-color: var(--wp--preset--color--secondary) !important;
+	box-shadow: 0px 30px 40px -15px rgba(194, 179, 164, 0.6);
+    transform: translateY(-12px);
+}
+
+.custom-has-shadow {
+		box-shadow: 0px 30px 40px -15px rgba(194, 179, 164, 0.6);
+
+}
+
+
+
+
+.fk-optin-form-spark .wfop_submit_btn {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    padding: 16px !important;
+    min-height: auto !important;
+    max-width: 100% !important;
+    background-color: var(--wp--preset--color--primary) !important;
+    color: var(--wp--preset--color--foreground-1) !important;
+	border-radius: 100px !important;
+}
+
+.fk-optin-form-spark .wfop_submit_btn:hover {
+    background-color: #1b1624 !important;
+    color: #fff !important;
+}
+
+.fk-optin-form-spark .wffn-optin-input {
+    border: none !important;
+	border-radius: 100px !important;
+    box-shadow: none !important;
+    line-height: 1 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: var(--wp--preset--color--foreground-3) !important;
+	background-color: #f9f6f3 !important;
+	padding-top: 19px !important;
+	padding-bottom: 19px !important;
+	padding-left: 30px !important;
+}</style><script>
+var head = document.head;
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "https://t.aliabdaal.com/v1/lst/universal-script?ph=010c24cbf590f9c8625befa180c2539eb6b676a258e1636c44ae1421a0fd4f96&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
+head.appendChild(script);
+</script><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '649570419901227');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=649570419901227&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+<!-- Start Sparkloop -->
+
+<script async src="https://js.sparkloop.app/team_906f7634e4.js" data-sparkloop></script>
+<!-- End Sparkloop -->
+<script src="https://cdn.usefathom.com/script.js" data-site="EJJXFTMU" defer></script><script>    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "lg3f55fs2j");
+</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TW2L5CJ');
+</script><style class="wpcode-css-snippet">.hidden-section {
+	display: none !important;
+}
+
+
+
+.ali-single-related-post--book-notes .ali-related-post-thumbnail img {
+    height: 290px !important;
+    max-width: 100%;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0px 25px 30px -10px #E0D8D0;
+}
+
+
+.newsletter-issue-loop ul li a {
+    font-size: clamp(22px, 2.5vw, 2rem);
+    text-decoration: none;
+    font-family: var(--wp--preset--font-family--heading);
+    line-height: 1.25;
+    padding-right: 20px !important;
+}
+
+
+</style><style class='wp-fonts-local'>
+@font-face{font-family:Elza;font-style:normal;font-weight:400;font-display:fallback;src:url('https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/fonts/elza/Elza-Regular.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Elza;font-style:italic;font-weight:400;font-display:fallback;src:url('https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/fonts/elza/Elza-Oblique.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Elza;font-style:normal;font-weight:500;font-display:fallback;src:url('https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/fonts/elza/Elza-Medium.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Elza;font-style:normal;font-weight:600;font-display:fallback;src:url('https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/fonts/elza/Elza-Semibold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Elza;font-style:normal;font-weight:700;font-display:fallback;src:url('https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/fonts/elza/Elza-Bold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Recoleta;font-style:normal;font-weight:600;font-display:fallback;src:url('https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/fonts/recoleta/recoleta-semibold.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:fallback;src:url('https://aliabdaal.com/wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Cardo;font-style:normal;font-weight:400;font-display:fallback;src:url('https://aliabdaal.com/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2') format('woff2');}
+</style>
+<link rel="icon" href="https://aliabdaal.com/wp-content/uploads/2024/10/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://aliabdaal.com/wp-content/uploads/2024/10/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://aliabdaal.com/wp-content/uploads/2024/10/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://aliabdaal.com/wp-content/uploads/2024/10/cropped-favicon-270x270.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><meta name="generator" content="WP Rocket 3.17.3.1" data-wpr-features="wpr_lazyload_images wpr_automatic_lazy_rendering wpr_oci wpr_minify_css wpr_desktop wpr_preload_links" /></head>
+
+<body class="archive post-type-archive post-type-archive-book_summary wp-custom-logo wp-embed-responsive theme-rckbs woocommerce-uses-block-theme woocommerce-block-theme-has-button-styles woocommerce-no-js has-featured-image">
+<style>
+.floating-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f3ede9;
+    color: #1b1624;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.floating-banner .close-banner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1b1624;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.floating-banner .close-banner:hover {
+    color: #5dcdf1;
+}
+
+.floating-banner a.banner-button {
+    color: #1b1624;
+    background-color: #5dcdf1;
+    padding: 10px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.floating-banner a.banner-button:hover {
+    color: #fff;
+    background-color: #1b1624;
+}
+</style>
+
+<div  class="floating-banner" id="floatingBanner">
+<button class="close-banner" onclick="closeBanner()">×</button>
+	<p><strong>Spark 2025</strong> starts in <strong><span id="countdown-timer"></span>.</strong> Join me for a <strong>free</strong>, live, online <strong>productivity masterclass</strong> on January 4th and 5th.</p>
+<a href="https://aliabdaal.com/spark" target="_blank" class="banner-button">Reserve my spot</a>
+</div>
+<script>
+// Set the target time to 2:00 PM UTC on January 4th, 2025
+const targetTime = new Date(Date.UTC(2025, 0, 4, 14, 0, 0, 0)); 
+// January is month '0' in JavaScript Date (0-based index).
+
+// Function to update the countdown
+function updateCountdown() {
+    const currentTime = new Date(); // Current local time
+    const timeDifference = targetTime - currentTime;
+
+    if (timeDifference > 0) {
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
+        const seconds = Math.floor((timeDifference / 1000) % 60);
+
+        document.getElementById("countdown-timer").textContent =
+            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    } else {
+        document.getElementById("countdown-timer").textContent = "Offer has ended!";
+        clearInterval(countdownInterval);
+    }
+}
+
+// Update the countdown every second
+const countdownInterval = setInterval(updateCountdown, 1000);
+updateCountdown(); // Initialize immediately
+</script>
+<script>
+function closeBanner() {
+    const banner = document.getElementById('floatingBanner');
+    banner.style.display = 'none';
+    sessionStorage.setItem('bannerDismissed', 'true');
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const isBannerDismissed = sessionStorage.getItem('bannerDismissed');
+    if (isBannerDismissed === 'true') {
+        const banner = document.getElementById('floatingBanner');
+        banner.style.display = 'none';
+    }
+});
+</script>
+<div  class="wp-site-blocks"><header  class="site-header wp-block-template-part"><div  class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--x-small)"><div class="wp-block-group alignwide header-nav-wrapper has-background-2-background-color has-background is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-18 wp-block-group-is-layout-flex" style="border-top-left-radius:20px;border-top-right-radius:20px;padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><div class="wp-block-group is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex"><div style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;" class="wp-block-site-logo"><a href="https://aliabdaal.com/" class="custom-logo-link" rel="home"><img width="180" height="33" src="https://aliabdaal.com/wp-content/uploads/2024/09/logo.webp" class="custom-logo" alt="AliAbdaal.com" decoding="async" srcset="https://aliabdaal.com/wp-content/uploads/2024/09/logo.webp 362w, https://aliabdaal.com/wp-content/uploads/2024/09/logo-300x56.webp 300w" sizes="(max-width: 180px) 100vw, 180px" /></a></div></div>
+
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-17 wp-block-group-is-layout-flex"><div class="wp-block-buttons has-custom-font-size tablet-nav-newsletter-button is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);"><div class="wp-block-button is-style-button-secondary"><a class="wp-block-button__link wp-element-button" href="/newsletter">Join 230k+ Subscribers</a></div></div>
+
+<nav style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);" class="is-responsive is-style-hover-color-primary wp-block-navigation is-horizontal is-layout-flex wp-block-navigation-is-layout-flex" aria-label="Navigation" 
+		 data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " 
+				data-wp-on-async--click="actions.openMenuOnClick"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+			><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 5v1.5h14V5H5zm0 7.8h14v-1.5H5v1.5zM5 19h14v-1.5H5V19z" /></svg></button>
+				<div class="wp-block-navigation__responsive-container  "  id="modal-1" 
+				data-wp-class--has-modal-open="state.isMenuOpen"
+				data-wp-class--is-menu-open="state.isMenuOpen"
+				data-wp-watch="callbacks.initMenu"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+				data-wp-on-async--focusout="actions.handleMenuFocusout"
+				tabindex="-1"
+			>
+					<div class="wp-block-navigation__responsive-close" tabindex="-1">
+						<div class="wp-block-navigation__responsive-dialog" 
+				data-wp-bind--aria-modal="state.ariaModal"
+				data-wp-bind--aria-label="state.ariaLabel"
+				data-wp-bind--role="state.roleAttribute"
+			>
+							<button aria-label="Close menu" class="wp-block-navigation__responsive-container-close" 
+				data-wp-on-async--click="actions.closeMenuOnClick"
+			><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
+							<div class="wp-block-navigation__responsive-container-content" 
+				data-wp-watch="callbacks.focusFirstElement"
+			 id="modal-1-content">
+								<ul style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);" class="wp-block-navigation__container is-responsive is-style-hover-color-primary wp-block-navigation"><li style="font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://go.feelgoodproductivity.com/amazon" target="_blank"  ><span class="wp-block-navigation-item__label">My Book</span></a></li><li
+	class="has-collapsed-link  wp-block-outermost-mega-menu"	data-wp-interactive='{ "namespace": "outermost/mega-menu" }'
+	data-wp-context='{ "menuOpenedBy": {} }'
+	data-wp-on--focusout="actions.handleMenuFocusout"
+	data-wp-on--keydown="actions.handleMenuKeydown"
+	data-wp-watch="callbacks.initMenu"
+>
+	<button
+		class="wp-block-outermost-mega-menu__toggle"
+		data-wp-on--click="actions.toggleMenuOnClick"
+		data-wp-bind--aria-expanded="state.isMenuOpen"
+	>
+		Free Resources<span class="wp-block-outermost-mega-menu__toggle-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false" fill="none"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></span>
+	</button>
+
+	<div
+		class="wp-block-outermost-mega-menu__menu-container menu-width-content menu-justified-center"
+		tabindex="-1"
+	>
+		<div class="wp-block-group has-background-1-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-16 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--x-large)"><p class="mega-menu-mobile-title has-heading-font-family has-large-font-size">Free Resources</p>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex"><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-2 wp-block-group-is-layout-constrained"><p class="mega-menu-col-title has-heading-font-family has-medium-font-size">Browse by type:</p>
+
+<hr class="wp-block-separator has-text-color has-background-4-color has-alpha-channel-opacity has-background-4-background-color has-background"/></div>
+
+<div class="wp-block-group mega-menu-links has-global-padding is-layout-constrained wp-container-core-group-is-layout-8 wp-block-group-is-layout-constrained"><div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-3 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:6px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="32" height="30" src="https://aliabdaal.com/wp-content/uploads/2024/10/articles.png" alt="" class="wp-image-3811" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/free-resources/" data-type="page" data-id="20">Articles</a></p></div>
+
+<div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-4 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:8px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="64" height="59" src="https://aliabdaal.com/wp-content/uploads/2024/10/book_notes.png" alt="" class="wp-image-3842" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/book-notes/">Book Notes</a></p></div>
+
+<div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-5 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:8px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="64" height="59" src="https://aliabdaal.com/wp-content/uploads/2024/10/icon-youtube-1.png" alt="" class="wp-image-3833" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/videos/">Videos</a></p></div>
+
+<div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-6 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:8px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="64" height="59" src="https://aliabdaal.com/wp-content/uploads/2024/10/icon-youtube-2.png" alt="" class="wp-image-3834" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/podcast/">Podcast</a></p></div>
+
+<div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-7 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:8px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="64" height="59" src="https://aliabdaal.com/wp-content/uploads/2024/10/icon-youtube-3.png" alt="" class="wp-image-3835" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/newsletter/">Newsletter</a></p></div></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-9 wp-block-group-is-layout-constrained"><p class="mega-menu-col-title has-heading-font-family has-medium-font-size">Browse by topic:</p>
+
+<hr class="wp-block-separator has-text-color has-background-4-color has-alpha-channel-opacity has-background-4-background-color has-background"/></div>
+
+<div class="wp-block-group mega-menu-links has-global-padding is-layout-constrained wp-container-core-group-is-layout-15 wp-block-group-is-layout-constrained"><div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-10 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:6px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="64" height="59" src="https://aliabdaal.com/wp-content/uploads/2024/10/icon-youtube-4.png" alt="" class="wp-image-3836" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/productivity/">Productivity</a></p></div>
+
+<div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-11 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:8px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="64" height="59" src="https://aliabdaal.com/wp-content/uploads/2024/10/icon-youtube-5.png" alt="" class="wp-image-3837" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/youtube/">YouTube</a></p></div>
+
+<div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-12 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:8px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="64" height="59" src="https://aliabdaal.com/wp-content/uploads/2024/10/icon-youtube-6.png" alt="" class="wp-image-3838" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/studying/">Studying</a></p></div>
+
+<div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-13 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:8px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="64" height="59" src="https://aliabdaal.com/wp-content/uploads/2024/10/icon-youtube-7.png" alt="" class="wp-image-3839" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/business/">Online Business</a></p></div>
+
+<div class="wp-block-group is-style-clickable-card is-nowrap is-layout-flex wp-container-core-group-is-layout-14 wp-block-group-is-layout-flex" style="border-radius:100px;padding-top:8px;padding-right:var(--wp--preset--spacing--x-small);padding-bottom:8px;padding-left:var(--wp--preset--spacing--x-small)"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="64" height="59" src="https://aliabdaal.com/wp-content/uploads/2024/10/icon-youtube-8.png" alt="" class="wp-image-3840" style="width:32px"/></figure>
+
+<p class="has-medium-font-size"><a href="https://aliabdaal.com/tech/">Tools &amp; Tech</a></p></div>
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex"><div class="wp-block-button has-custom-font-size is-style-button-text-arrow has-medium-font-size"><a class="wp-block-button__link wp-element-button" href="https://aliabdaal.com/free-resources/">all categories</a></div></div></div></div></div></div>		<button 
+			aria-label="Close menu" 
+			class="menu-container__close-button" 
+			data-wp-on--click="actions.closeMenuOnClick"
+			type="button" 
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg>		</button>
+	</div>
+
+	</li><li style="font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://ptya.com/?utm_source=aliabdaal.com&#038;utm_medium=header&#038;utm_campaign=site_wide" target="_blank"  ><span class="wp-block-navigation-item__label">YouTube Academy</span></a></li><li style="font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);" class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="https://productivitylab.com/join?utm_source=aliabdaal.com&#038;utm_medium=main_navigation&#038;utm_campaign=website_referral" target="_blank"  ><span class="wp-block-navigation-item__label">Productivity Lab</span></a></li></ul><div class="wp-block-buttons nav-newsletter-button is-layout-flex wp-block-buttons-is-layout-flex"><div class="wp-block-button is-style-button-secondary"><a class="wp-block-button__link wp-element-button" href="/newsletter">Join 235k+ Subscribers</a></div></div>
+							</div>
+						</div>
+					</div>
+				</div></nav></div></div></div></header><main  class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0"><div  class="wp-block-group alignwide has-background-2-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-bottom-left-radius:20px;border-bottom-right-radius:20px;padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><div class="wp-block-columns alignwide are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex"><div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:600px"><h1 class="wp-block-heading" id="h-book-notes">Book Notes</h1>
+
+<p class="has-medium-font-size">I enjoy reading and get through more books than I can count. Here&#8217;s some of the notes I&#8217;ve taken on the best books I&#8217;ve read. </p></div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow"><figure class="wp-block-image size-full"><img fetchpriority="high" width="956" height="740" src="https://aliabdaal.com/wp-content/uploads/2024/09/book_notes.png" alt="" class="wp-image-3180" srcset="https://aliabdaal.com/wp-content/uploads/2024/09/book_notes.png 956w, https://aliabdaal.com/wp-content/uploads/2024/09/book_notes-300x232.png 300w, https://aliabdaal.com/wp-content/uploads/2024/09/book_notes-768x594.png 768w" sizes="(max-width: 956px) 100vw, 956px" /></figure></div></div></div>
+
+<div  class="wp-block-group alignfull hidden-section has-global-padding is-layout-constrained wp-container-core-group-is-layout-23 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><div class="wp-block-group alignwide is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-21 wp-block-group-is-layout-flex"><h2 class="wp-block-heading has-x-large-font-size" id="h-featured-books">
+				Featured Books
+			</h2>
+
+<!-- Custom Carousel Controls -->
+<div class="cc_carousel--controls">
+	<button class="cc_carousel--controls--button cc_carousel--controls-prev" aria-label="Previous slide" data-carousel-id="featured-book-notes">
+	</button>
+	<button class="cc_carousel--controls--button cc_carousel--controls-next" aria-label="Next slide" data-carousel-id="featured-book-notes">
+	</button>
+</div></div>
+
+<div class="wp-block-group alignfull carousel-wrap-overflow-hide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0;padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large)"><div class="carousel-wrap">
+        <!-- Carousel Slider -->
+        <div class="cc_carousel carousel alignfull cc_carousel--style3" id="featured-book-notes" data-use-custom-controls="true" data-cell-align="left"
+        data-initial-index="0" data-carousel-autoplay="false">
+                            <div class="carousel-cell" style="background-color:;"><div class="carousel-cell--inner">
+                                            <div class="carousel-cell--image">
+                            <img src="https://aliabdaal.com/wp-content/uploads/2023/01/Die-with-Zero.jpeg" alt="" />
+                        </div>
+                                        <div class="carousel-cell--content">
+                        
+                                                    <h3>Die With Zero – Summary With Notes and Highlights</h3>
+                        
+                                                    <div class="carousel-cell--copy">
+                                A practical guide to getting the most out of your money – and your life. Including highlights, recommendations, and a full summary of the book.                            </div>
+                        
+                                                    <div class="carousel-cell--link">
+                                <a href="https://aliabdaal.com/book-notes/die-with-zero/" target="">
+                                    Continue Reading                                </a>
+                            </div>
+                                            </div>
+                </div></div>
+                            <div class="carousel-cell" style="background-color:;"><div class="carousel-cell--inner">
+                                            <div class="carousel-cell--image">
+                            <img src="https://aliabdaal.com/wp-content/uploads/2023/01/Die-with-Zero.jpeg" alt="" />
+                        </div>
+                                        <div class="carousel-cell--content">
+                        
+                                                    <h3>Die With Zero – Summary With Notes and Highlights</h3>
+                        
+                                                    <div class="carousel-cell--copy">
+                                A practical guide to getting the most out of your money – and your life. Including highlights, recommendations, and a full summary of the book.                            </div>
+                        
+                                                    <div class="carousel-cell--link">
+                                <a href="https://aliabdaal.com/book-notes/die-with-zero/" target="">
+                                    Continue Reading                                </a>
+                            </div>
+                                            </div>
+                </div></div>
+                            <div class="carousel-cell" style="background-color:;"><div class="carousel-cell--inner">
+                                            <div class="carousel-cell--image">
+                            <img src="https://aliabdaal.com/wp-content/uploads/2023/01/Die-with-Zero.jpeg" alt="" />
+                        </div>
+                                        <div class="carousel-cell--content">
+                        
+                                                    <h3>Die With Zero – Summary With Notes and Highlights</h3>
+                        
+                                                    <div class="carousel-cell--copy">
+                                A practical guide to getting the most out of your money – and your life. Including highlights, recommendations, and a full summary of the book.                            </div>
+                        
+                                                    <div class="carousel-cell--link">
+                                <a href="https://aliabdaal.com/book-notes/die-with-zero/" target="">
+                                    Continue Reading                                </a>
+                            </div>
+                                            </div>
+                </div></div>
+                            <div class="carousel-cell" style="background-color:;"><div class="carousel-cell--inner">
+                                            <div class="carousel-cell--image">
+                            <img src="https://aliabdaal.com/wp-content/uploads/2023/01/Die-with-Zero.jpeg" alt="" />
+                        </div>
+                                        <div class="carousel-cell--content">
+                        
+                                                    <h3>Die With Zero – Summary With Notes and Highlights</h3>
+                        
+                                                    <div class="carousel-cell--copy">
+                                A practical guide to getting the most out of your money – and your life. Including highlights, recommendations, and a full summary of the book.                            </div>
+                        
+                                                    <div class="carousel-cell--link">
+                                <a href="https://aliabdaal.com/book-notes/die-with-zero/" target="">
+                                    Continue Reading                                </a>
+                            </div>
+                                            </div>
+                </div></div>
+                            <div class="carousel-cell" style="background-color:;"><div class="carousel-cell--inner">
+                                            <div class="carousel-cell--image">
+                            <img src="https://aliabdaal.com/wp-content/uploads/2023/01/Die-with-Zero.jpeg" alt="" />
+                        </div>
+                                        <div class="carousel-cell--content">
+                        
+                                                    <h3>Die With Zero – Summary With Notes and Highlights</h3>
+                        
+                                                    <div class="carousel-cell--copy">
+                                A practical guide to getting the most out of your money – and your life. Including highlights, recommendations, and a full summary of the book.                            </div>
+                        
+                                                    <div class="carousel-cell--link">
+                                <a href="https://aliabdaal.com/book-notes/die-with-zero/" target="">
+                                    Continue Reading                                </a>
+                            </div>
+                                            </div>
+                </div></div>
+                            <div class="carousel-cell" style="background-color:;"><div class="carousel-cell--inner">
+                                            <div class="carousel-cell--image">
+                            <img src="https://aliabdaal.com/wp-content/uploads/2023/01/Die-with-Zero.jpeg" alt="" />
+                        </div>
+                                        <div class="carousel-cell--content">
+                        
+                                                    <h3>Die With Zero – Summary With Notes and Highlights</h3>
+                        
+                                                    <div class="carousel-cell--copy">
+                                A practical guide to getting the most out of your money – and your life. Including highlights, recommendations, and a full summary of the book.                            </div>
+                        
+                                                    <div class="carousel-cell--link">
+                                <a href="https://aliabdaal.com/book-notes/die-with-zero/" target="">
+                                    Continue Reading                                </a>
+                            </div>
+                                            </div>
+                </div></div>
+                    </div>
+    </div></div></div>
+
+<div  class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--giant);padding-bottom:var(--wp--preset--spacing--medium)"><div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-25 wp-block-group-is-layout-constrained"><h2 class="wp-block-heading alignwide has-x-large-font-size" id="h-recent-books">
+				Recent Books
+			</h2>
+
+<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-container-core-group-is-layout-24 wp-block-group-is-layout-constrained"><div class="facetwp-facet facetwp-facet-book_genre facetwp-type-radio" data-name="book_genre" data-type="radio"></div></div></div>
+
+<div class="wp-block-group alignwide book-notes-archive-post-loop has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:var(--wp--preset--spacing--large)"><div class="wp-block-query alignwide is-layout-flow wp-block-query-is-layout-flow"><ul class="columns-3 facetwp-template wp-block-post-template is-layout-grid wp-container-core-post-template-is-layout-1 wp-block-post-template-is-layout-grid"><li class="wp-block-post post-324 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-life"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-27 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/die-with-zero/" target="_self"  ><img width="600" height="904" src="./Images/Book_1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Die With Zero &#8211; Summary With Notes and Highlights" style="object-fit:cover;" decoding="async" fetchpriority="high" srcset="./Images/Book_1.jpg 600w, ./Images/Book_1.jpg 199w" sizes="(max-width: 600px) 100vw, 600px" /></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-26 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/die-with-zero/" target="_self" >Die With Zero &#8211; Summary With Notes and Highlights</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-2832 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-productivity"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-29 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/atomic-habits-summary/" target="_self"  ><img width="331" height="499" src="./Images/Book_2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Atomic Habits (James Clear) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" srcset="./Images/Book_2.jpg 331w, ./Images/Book_2.jpg 199w" sizes="(max-width: 331px) 100vw, 331px" /></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-28 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/atomic-habits-summary/" target="_self" >Atomic Habits (James Clear) &#8211; Book Summary, Notes &#038; Highlights</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-2831 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-life"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-31 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/your-money-or-your-life/" target="_self"  ><img width="324" height="500" src="./Images/Book_3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Your Money or Your Life (Vicki Robin) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" srcset="./Images/Book_3.jpg 324w, ./Images/Book_3.jpg 194w" sizes="(max-width: 324px) 100vw, 324px" /></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-30 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/your-money-or-your-life/" target="_self" >Your Money or Your Life (Vicki Robin) &#8211; Book Summary, Notes &#038; Highlights</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-2830 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-life"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-33 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/how-will-you-measure-your-life-book-summary-notes-highlights/" target="_self"  ><img width="327" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20327%20500'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="How will you measure your life? &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" data-lazy-srcset="Images/Book_4.jpg 327w, Images/Book_4.jpg 196w" data-lazy-sizes="(max-width: 327px) 100vw, 327px" data-lazy-src="Images/Book_4.jpg" /><noscript><img width="327" height="500" src="Images/Book_4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="How will you measure your life? &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" srcset="Images/Book_4.jpg 327w, Images/Book_4.jpg 196w" sizes="(max-width: 327px) 100vw, 327px" /></noscript></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-32 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/how-will-you-measure-your-life-book-summary-notes-highlights/" target="_self" >How will you measure your life? &#8211; Book Summary, Notes &#038; Highlights</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-2823 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-creativity"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-35 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/show-your-work/" target="_self"  ><img width="260" height="260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20260%20260'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Show Your Work! (Austin Kleon) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" data-lazy-srcset="Images/Book_5.jpg 260w, Images/Book_5.jpg 150w, Images/Book_5.jpg 120w" data-lazy-sizes="(max-width: 260px) 100vw, 260px" data-lazy-src="Images/Book_5.jpg" /><noscript><img width="260" height="260" src="Images/Book_5.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Show Your Work! (Austin Kleon) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" srcset="Images/Book_5.jpg 260w, Images/Book_5.jpg 150w, Images/Book_5.jpg 120w" sizes="(max-width: 260px) 100vw, 260px" /></noscript></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-34 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/show-your-work/" target="_self" >Show Your Work! (Austin Kleon) &#8211; Book Summary, Notes &#038; Highlights</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-2822 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-business"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-37 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/the-making-of-a-manager/" target="_self"  ><img width="312" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20312%20500'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Making of a Manager (Julie Zhuo) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2023/01/The-Making-of-a-Manager.jpg 312w, https://aliabdaal.com/wp-content/uploads/2023/01/The-Making-of-a-Manager-187x300.jpg 187w" data-lazy-sizes="(max-width: 312px) 100vw, 312px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2023/01/The-Making-of-a-Manager.jpg" /><noscript><img width="312" height="500" src="https://aliabdaal.com/wp-content/uploads/2023/01/The-Making-of-a-Manager.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Making of a Manager (Julie Zhuo) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" srcset="https://aliabdaal.com/wp-content/uploads/2023/01/The-Making-of-a-Manager.jpg 312w, https://aliabdaal.com/wp-content/uploads/2023/01/The-Making-of-a-Manager-187x300.jpg 187w" sizes="(max-width: 312px) 100vw, 312px" /></noscript></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-36 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/the-making-of-a-manager/" target="_self" >The Making of a Manager (Julie Zhuo) &#8211; Book Summary, Notes &#038; Highlights</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-2821 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-business"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-39 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/storyworthy-matthew-dicks-summary-and-notes/" target="_self"  ><img width="323" height="499" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20323%20499'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Storyworthy (Matthew Dicks) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2023/01/Storyworthy.jpg 323w, https://aliabdaal.com/wp-content/uploads/2023/01/Storyworthy-194x300.jpg 194w" data-lazy-sizes="(max-width: 323px) 100vw, 323px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2023/01/Storyworthy.jpg" /><noscript><img width="323" height="499" src="https://aliabdaal.com/wp-content/uploads/2023/01/Storyworthy.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Storyworthy (Matthew Dicks) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" srcset="https://aliabdaal.com/wp-content/uploads/2023/01/Storyworthy.jpg 323w, https://aliabdaal.com/wp-content/uploads/2023/01/Storyworthy-194x300.jpg 194w" sizes="(max-width: 323px) 100vw, 323px" /></noscript></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-38 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/storyworthy-matthew-dicks-summary-and-notes/" target="_self" >Storyworthy (Matthew Dicks) &#8211; Book Summary, Notes &#038; Highlights</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-292 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-productivity"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-41 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/how-to-take-smart-notes/" target="_self"  ><img width="313" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20313%20500'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="How to Take Smart Notes (Sönke Ahrens) &#8211; Book Summary and Notes" style="object-fit:cover;" decoding="async" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2023/01/How-to-Take-Smart-Notes.jpg 313w, https://aliabdaal.com/wp-content/uploads/2023/01/How-to-Take-Smart-Notes-188x300.jpg 188w" data-lazy-sizes="(max-width: 313px) 100vw, 313px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2023/01/How-to-Take-Smart-Notes.jpg" /><noscript><img width="313" height="500" src="https://aliabdaal.com/wp-content/uploads/2023/01/How-to-Take-Smart-Notes.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="How to Take Smart Notes (Sönke Ahrens) &#8211; Book Summary and Notes" style="object-fit:cover;" decoding="async" srcset="https://aliabdaal.com/wp-content/uploads/2023/01/How-to-Take-Smart-Notes.jpg 313w, https://aliabdaal.com/wp-content/uploads/2023/01/How-to-Take-Smart-Notes-188x300.jpg 188w" sizes="(max-width: 313px) 100vw, 313px" /></noscript></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-40 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/how-to-take-smart-notes/" target="_self" >How to Take Smart Notes (Sönke Ahrens) &#8211; Book Summary and Notes</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-2820 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-business"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-43 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/the-magic-of-thinking-big/" target="_self"  ><img width="330" height="499" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20330%20499'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Magic of Thinking Big (David Swartz) &#8211; Book Discussion" style="object-fit:cover;" decoding="async" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2023/01/The-Magic-of-Thinking-Big.jpg 330w, https://aliabdaal.com/wp-content/uploads/2023/01/The-Magic-of-Thinking-Big-198x300.jpg 198w" data-lazy-sizes="(max-width: 330px) 100vw, 330px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2023/01/The-Magic-of-Thinking-Big.jpg" /><noscript><img width="330" height="499" src="https://aliabdaal.com/wp-content/uploads/2023/01/The-Magic-of-Thinking-Big.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Magic of Thinking Big (David Swartz) &#8211; Book Discussion" style="object-fit:cover;" decoding="async" srcset="https://aliabdaal.com/wp-content/uploads/2023/01/The-Magic-of-Thinking-Big.jpg 330w, https://aliabdaal.com/wp-content/uploads/2023/01/The-Magic-of-Thinking-Big-198x300.jpg 198w" sizes="(max-width: 330px) 100vw, 330px" /></noscript></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-42 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/the-magic-of-thinking-big/" target="_self" >The Magic of Thinking Big (David Swartz) &#8211; Book Discussion</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-2818 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-life"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-45 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/happy-derren-brown/" target="_self"  ><img width="321" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20321%20500'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Happy (Derren Brown) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2023/01/happy-deren-brown-book-cover.jpg 321w, https://aliabdaal.com/wp-content/uploads/2023/01/happy-deren-brown-book-cover-193x300.jpg 193w" data-lazy-sizes="(max-width: 321px) 100vw, 321px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2023/01/happy-deren-brown-book-cover.jpg" /><noscript><img width="321" height="500" src="https://aliabdaal.com/wp-content/uploads/2023/01/happy-deren-brown-book-cover.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Happy (Derren Brown) &#8211; Book Summary, Notes &#038; Highlights" style="object-fit:cover;" decoding="async" srcset="https://aliabdaal.com/wp-content/uploads/2023/01/happy-deren-brown-book-cover.jpg 321w, https://aliabdaal.com/wp-content/uploads/2023/01/happy-deren-brown-book-cover-193x300.jpg 193w" sizes="(max-width: 321px) 100vw, 321px" /></noscript></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-44 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/happy-derren-brown/" target="_self" >Happy (Derren Brown) &#8211; Book Summary, Notes &#038; Highlights</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-2817 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-business"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-47 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/the-courage-to-be-dislikeded/" target="_self"  ><img width="329" height="499" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20329%20499'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Courage to be Disliked (Fumitake Koga and Ichiro Kishimi) &#8211; Book Discussion" style="object-fit:cover;" decoding="async" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2023/01/the-courage-to-be-disliked-book-cover.jpg 329w, https://aliabdaal.com/wp-content/uploads/2023/01/the-courage-to-be-disliked-book-cover-198x300.jpg 198w" data-lazy-sizes="(max-width: 329px) 100vw, 329px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2023/01/the-courage-to-be-disliked-book-cover.jpg" /><noscript><img width="329" height="499" src="https://aliabdaal.com/wp-content/uploads/2023/01/the-courage-to-be-disliked-book-cover.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Courage to be Disliked (Fumitake Koga and Ichiro Kishimi) &#8211; Book Discussion" style="object-fit:cover;" decoding="async" srcset="https://aliabdaal.com/wp-content/uploads/2023/01/the-courage-to-be-disliked-book-cover.jpg 329w, https://aliabdaal.com/wp-content/uploads/2023/01/the-courage-to-be-disliked-book-cover-198x300.jpg 198w" sizes="(max-width: 329px) 100vw, 329px" /></noscript></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-46 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/the-courage-to-be-dislikeded/" target="_self" >The Courage to be Disliked (Fumitake Koga and Ichiro Kishimi) &#8211; Book Discussion</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li><li class="wp-block-post post-281 book_summary type-book_summary status-publish has-post-thumbnail hentry book_genre-biography"><div class="wp-block-group is-style-clickable-card has-background-2-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-49 wp-block-group-is-layout-constrained" style="border-radius:20px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><figure class="wp-block-post-featured-image"><a href="https://aliabdaal.com/book-notes/the-wright-brothers/" target="_self"  ><img width="333" height="499" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20333%20499'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Wright Brothers (David McCullough) &#8211; Book Discussion" style="object-fit:cover;" decoding="async" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2023/01/the-wright-brothers-book-cover.jpg 333w, https://aliabdaal.com/wp-content/uploads/2023/01/the-wright-brothers-book-cover-200x300.jpg 200w" data-lazy-sizes="(max-width: 333px) 100vw, 333px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2023/01/the-wright-brothers-book-cover.jpg" /><noscript><img width="333" height="499" src="https://aliabdaal.com/wp-content/uploads/2023/01/the-wright-brothers-book-cover.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="The Wright Brothers (David McCullough) &#8211; Book Discussion" style="object-fit:cover;" decoding="async" srcset="https://aliabdaal.com/wp-content/uploads/2023/01/the-wright-brothers-book-cover.jpg 333w, https://aliabdaal.com/wp-content/uploads/2023/01/the-wright-brothers-book-cover-200x300.jpg 200w" sizes="(max-width: 333px) 100vw, 333px" /></noscript></a></figure>
+
+<div class="wp-block-group is-vertical is-content-justification-center is-layout-flex wp-container-core-group-is-layout-48 wp-block-group-is-layout-flex"><h2 style="font-size:clamp(15.747px, 0.984rem + ((1vw - 3.2px) * 0.938), 24px);" class="has-text-align-center wp-block-post-title"><a href="https://aliabdaal.com/book-notes/the-wright-brothers/" target="_self" >The Wright Brothers (David McCullough) &#8211; Book Discussion</a></h2>
+
+<p class="has-text-align-center book-loop-read-more-arrow">
+							Read More
+						</p></div></div></li></ul>
+
+</div></div></div></main><footer data-wpr-lazyrender="1" class="alignfull wp-block-template-part"><div  class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-63 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--giant);padding-bottom:var(--wp--preset--spacing--x-large)"><div data-bg="https://aliabdaal.com/wp-content/uploads/2024/09/wave_bg.png" class="wp-block-group alignwide has-background-2-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained rocket-lazyload" style="border-radius:20px;padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--xx-large);background-position:47% 0%;background-repeat:no-repeat;background-size:contain;"><div class="wp-block-group alignwide cta-box cta-newsletter-signup--bg2 has-background-1-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:20px;margin-top:var(--wp--preset--spacing--large);padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex"><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:40%"><div class="wp-block-group life-notes-plane is-vertical is-layout-flex wp-container-core-group-is-layout-53 wp-block-group-is-layout-flex" style="font-size:clamp(31.609px, 1.976rem + ((1vw - 3.2px) * 2.772), 56px);line-height:1.1"><p class="life-notes-plane--subscribe" style="font-size:clamp(31.609px, 1.976rem + ((1vw - 3.2px) * 2.772), 56px);font-style:normal;font-weight:400;line-height:1">Subscribe to</p>
+
+<p class="life-notes-plane--title has-heading-font-family" style="font-size:clamp(38.682px, 2.418rem + ((1vw - 3.2px) * 3.786), 72px);line-height:1">LifeNotes</p></div>
+
+<div class="wp-block-group has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-54 wp-block-group-is-layout-constrained"><p>Join a growing community of more than <strong>235,000 friendly readers.</strong></p></div>
+
+<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-56 wp-block-group-is-layout-flex"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="195" height="83" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20195%2083'%3E%3C/svg%3E" alt="" class="wp-image-225" style="width:105px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2024/09/Avatars.png"/><noscript><img decoding="async" width="195" height="83" src="https://aliabdaal.com/wp-content/uploads/2024/09/Avatars.png" alt="" class="wp-image-225" style="width:105px"/></noscript></figure>
+
+<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-55 wp-block-group-is-layout-flex"><figure class="wp-block-image size-full is-resized"><img decoding="async" width="227" height="47" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20227%2047'%3E%3C/svg%3E" alt="" class="wp-image-227" style="width:113px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2024/09/Rating.png"/><noscript><img decoding="async" width="227" height="47" src="https://aliabdaal.com/wp-content/uploads/2024/09/Rating.png" alt="" class="wp-image-227" style="width:113px"/></noscript></figure>
+
+<p class="has-foreground-4-color has-text-color has-link-color wp-elements-bd6e712cc39c4cf02b2ecbc7c9b07247" style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);">200+ reviews</p></div></div></div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:60%"><p class="has-medium-font-size" style="line-height:1.6">Every week (ish) I share actionable productivity tips, practical life advice, and high-quality insights from across the web, directly to your inbox.</p>
+
+<div class="wp-block-group ali-newsletter-form cta-newsletter-signup--bg2 has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"><script type="text/javascript"></script>
+                <div class='gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_1' ><style>#gform_wrapper_1[data-form-index="0"].gform-theme,[data-parent-form="1_0"]{--gf-color-primary: #204ce5;--gf-color-primary-rgb: 32, 76, 229;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #001AB3;--gf-color-primary-lighter: #527EFF;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #112337;--gf-color-secondary-contrast-rgb: 17, 35, 55;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-out-ctrl-light-rgb: 17, 35, 55;--gf-color-out-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #585e6a;--gf-color-out-ctrl-dark-rgb: 88, 94, 106;--gf-color-out-ctrl-dark-darker: #112337;--gf-color-out-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #112337;--gf-color-in-ctrl-contrast-rgb: 17, 35, 55;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #204ce5;--gf-color-in-ctrl-primary-rgb: 32, 76, 229;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #001AB3;--gf-color-in-ctrl-primary-lighter: #527EFF;--gf-color-in-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-in-ctrl-light-rgb: 17, 35, 55;--gf-color-in-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #585e6a;--gf-color-in-ctrl-dark-rgb: 88, 94, 106;--gf-color-in-ctrl-dark-darker: #112337;--gf-color-in-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-radius: 3px;--gf-font-size-secondary: 14px;--gf-font-size-tertiary: 13px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #686e77;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #112337;--gf-ctrl-label-color-secondary: #112337;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #686e77;--gf-ctrl-file-btn-bg-color-hover: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(17, 35, 55, 0.8);}</style><form method='post' enctype='multipart/form-data'  id='gform_1'  action='/book-notes/' data-formid='1' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_1_1" class="gfield gfield--type-email gfield--input-type-email gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  data-js-reload="field_1_1" ><label class='gfield_label gform-field-label' for='input_1_1'>Your Email<span class="gfield_required"><span class="gfield_required gfield_required_text">(Required)</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_1' id='input_1_1' type='email' value='' class='large'   placeholder='Your email' aria-required="true" aria-invalid="false"  />
+                        </div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' value='Subscribe'  /> 
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_1' value='postback' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_1' id='gform_theme_1' value='orbital' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_1' id='gform_style_settings_1' value='{"formId":"1","title":false,"description":false,"theme":"orbital","inputPrimaryColor":"#204ce5"}' />
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsIjYyYmY0MGZjNzcyYjIzNWVjOGIzNzk5MDA0ZDgzYWIxIl0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script>
+gform.initializeOnLoaded( function() {gformInitSpinner( 1, 'https://aliabdaal.com/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://aliabdaal.com/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);                if (event && event.defaultPrevented) {                return;         }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;                function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            jQuery( document ).trigger( 'gform_post_render', [1, current_page] );            gform.utils.trigger( { event: 'gform/postRender', native: false, data: { formId: 1, currentPage: current_page } } );            gform.utils.trigger( { event: 'gform/post_render', native: false, data: { formId: 1, currentPage: current_page } } );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script></div>
+
+<p class="has-foreground-3-color has-text-color has-link-color wp-elements-2f2c0e588ab0ffd8e592866c158f04f2" style="font-size:14px;font-style:normal;font-weight:400">By submitting this form, you’ll be signed up to my free newsletter. I may also send you other emails about my courses. You can opt-out at any time. For more information, see our&nbsp;<a href="https://aliabdaal.com/privacy-policy/">privacy policy.</a></p></div></div></div></div>
+
+<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex"><div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-7 wp-block-column-is-layout-flow" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:33.34%"><figure class="wp-block-image size-full"><a href="https://feelgoodproductivity.com/?utm_source=aliabdaal.com&amp;utm_medium=footer&amp;utm_campaign=footer_blocks" target="_blank" rel=" noreferrer noopener"><img decoding="async" width="758" height="672" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20758%20672'%3E%3C/svg%3E" alt="" class="wp-image-93" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2024/09/book.png 758w, https://aliabdaal.com/wp-content/uploads/2024/09/book-300x266.png 300w" data-lazy-sizes="(max-width: 758px) 100vw, 758px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2024/09/book.png" /><noscript><img decoding="async" width="758" height="672" src="https://aliabdaal.com/wp-content/uploads/2024/09/book.png" alt="" class="wp-image-93" srcset="https://aliabdaal.com/wp-content/uploads/2024/09/book.png 758w, https://aliabdaal.com/wp-content/uploads/2024/09/book-300x266.png 300w" sizes="(max-width: 758px) 100vw, 758px" /></noscript></a></figure>
+
+<p class="has-text-align-center has-medium-font-size" style="margin-top:var(--wp--preset--spacing--small);font-style:normal;font-weight:500"><a href="https://feelgoodproductivity.com/?utm_source=aliabdaal.com&amp;utm_medium=footer&amp;utm_campaign=footer_blocks" data-type="link" data-id="https://feelgoodproductivity.com/?utm_source=aliabdaal.com&amp;utm_medium=footer&amp;utm_campaign=footer_blocks" target="_blank" rel="noreferrer noopener nofollow">Feel Good Productivity</a></p>
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-60 wp-block-group-is-layout-constrained" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><p class="has-text-align-center" style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);">&nbsp;My New York Times Bestselling book about how to do more of what matters to you, while enjoying the journey along the way.&nbsp;</p></div></div>
+
+<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-8 wp-block-column-is-layout-flow" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:33.34%"><figure class="wp-block-image size-full"><a href="https://productivitylab.com/?utm_source=aliabdaal.com&amp;utm_medium=footer&amp;utm_campaign=footer_blocks" target="_blank" rel=" noreferrer noopener"><img decoding="async" width="758" height="672" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20758%20672'%3E%3C/svg%3E" alt="" class="wp-image-107" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2024/09/productivity_lab.png 758w, https://aliabdaal.com/wp-content/uploads/2024/09/productivity_lab-300x266.png 300w" data-lazy-sizes="(max-width: 758px) 100vw, 758px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2024/09/productivity_lab.png" /><noscript><img decoding="async" width="758" height="672" src="https://aliabdaal.com/wp-content/uploads/2024/09/productivity_lab.png" alt="" class="wp-image-107" srcset="https://aliabdaal.com/wp-content/uploads/2024/09/productivity_lab.png 758w, https://aliabdaal.com/wp-content/uploads/2024/09/productivity_lab-300x266.png 300w" sizes="(max-width: 758px) 100vw, 758px" /></noscript></a></figure>
+
+<p class="has-text-align-center has-medium-font-size" style="margin-top:var(--wp--preset--spacing--small);font-style:normal;font-weight:500"><a href="https://productivitylab.com/?utm_source=aliabdaal.com&amp;utm_medium=footer&amp;utm_campaign=footer_blocks" data-type="link" data-id="https://productivitylab.com/?utm_source=aliabdaal.com&amp;utm_medium=footer&amp;utm_campaign=footer_blocks" target="_blank" rel="noreferrer noopener nofollow">Productivity Lab</a></p>
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-61 wp-block-group-is-layout-constrained" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><p class="has-text-align-center" style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);">My community of ambitious entrepreneurs, creators and professionals. We help you double your productivity while having fun and making friends along the way.</p></div></div>
+
+<div class="wp-block-column is-layout-flow wp-container-core-column-is-layout-9 wp-block-column-is-layout-flow" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:33.34%"><figure class="wp-block-image size-full"><a href="https://ptya.com/?utm_source=aliabdaal.com&amp;utm_medium=footer&amp;utm_campaign=footer_blocks" target="_blank" rel=" noreferrer noopener"><img decoding="async" width="758" height="672" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20758%20672'%3E%3C/svg%3E" alt="" class="wp-image-108" data-lazy-srcset="https://aliabdaal.com/wp-content/uploads/2024/09/youtuber_academy.png 758w, https://aliabdaal.com/wp-content/uploads/2024/09/youtuber_academy-300x266.png 300w" data-lazy-sizes="(max-width: 758px) 100vw, 758px" data-lazy-src="https://aliabdaal.com/wp-content/uploads/2024/09/youtuber_academy.png" /><noscript><img decoding="async" width="758" height="672" src="https://aliabdaal.com/wp-content/uploads/2024/09/youtuber_academy.png" alt="" class="wp-image-108" srcset="https://aliabdaal.com/wp-content/uploads/2024/09/youtuber_academy.png 758w, https://aliabdaal.com/wp-content/uploads/2024/09/youtuber_academy-300x266.png 300w" sizes="(max-width: 758px) 100vw, 758px" /></noscript></a></figure>
+
+<p class="has-text-align-center has-medium-font-size" style="margin-top:var(--wp--preset--spacing--small);font-style:normal;font-weight:500"><a href="https://ptya.com/?utm_source=aliabdaal.com&amp;utm_medium=footer&amp;utm_campaign=footer_blocks" data-type="link" data-id="https://ptya.com/?utm_source=aliabdaal.com&amp;utm_medium=footer&amp;utm_campaign=footer_blocks" target="_blank" rel="noreferrer noopener nofollow">YouTuber Academy</a></p>
+
+<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-62 wp-block-group-is-layout-constrained" style="padding-right:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><p class="has-text-align-center" style="font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);">My courses and programmes about how to grow a life-changing YouTube channel.</p></div></div></div></div></footer>
+
+
+
+<footer data-wpr-lazyrender="1" class="aligncenter wp-block-template-part"><div  class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-118 wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--giant);padding-bottom:var(--wp--preset--spacing--x-large)"><div data-bg="https://aliabdaal.com/wp-content/uploads/2024/09/wave_bg.png" class="wp-block-group alignwide has-background-2-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained rocket-lazyload" style="border-radius:20px;padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--xx-large);background-position:47% 0%;background-repeat:no-repeat;background-size:contain;"><div class="wp-block-group alignwide cta-box cta-newsletter-signup--bg2 has-background-1-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="border-radius:20px;margin-top:var(--wp--preset--spacing--large);padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)">
+    
+    
+    
+    <div class="wp-block-group alignwide site-footer-copyright has-foreground-3-color has-text-color has-link-color wp-elements-bb4aecfe1cba88067ca77dcf625b35b6 is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-121 wp-block-group-is-layout-flex" style="display: flex; justify-content: space-evenly; align-items: center; font-size:clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);"><div class="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-4 wp-block-buttons-is-layout-flex"><div class="wp-block-button has-custom-font-size powered-by-rockbase-button" style="font-size:13px"><a class="wp-block-button__link has-foreground-1-color has-background-2-background-color has-text-color has-background has-link-color wp-element-button" href="https://rockbase.co" style="border-radius:20px;padding-top:8px;padding-right:16px;padding-bottom:8px;padding-left:16px" target="_blank" rel="noopener"><img decoding="async" style="width: 12px;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Rockabse Logo" data-lazy-src="https://aliabdaal.com/wp-content/themes/rckbs/assets/images/icons/rockbase-icon-alt.png"><noscript><img decoding="async" style="width: 12px;" src="https://aliabdaal.com/wp-content/themes/rckbs/assets/images/icons/rockbase-icon-alt.png" alt="Rockabse Logo"></noscript><span>Powered by Rockbase</span></a></div></div>
+
+
+
+    
+        <div class="wp-block-buttons mobile-buttons-stack is-layout-flex wp-block-buttons-is-layout-flex"><div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.youtube.com/channel/UCoOae5nYA7VqaXzerajD0lg" target="_blank" rel="noreferrer noopener">Books</a></div>
+        
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://aliabdaal.com/free-resources/">Articles</a></div>
+        
+        <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://go.feelgoodproductivity.com/amazon" target="_blank" rel="noreferrer noopener">Wikipedia</a></div></div>
+
+
+
+</div></div></div></footer></div>
+<script type="application/json" id="wp-script-module-data-@wordpress/interactivity-router">
+{"i18n":{"loading":"Loading page, please wait.","loaded":"Page Loaded."}}
+</script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/143785640.js"></script>
+<!-- End of HubSpot Embed Code -->
+			<div
+				class="wp-interactivity-router-loading-bar"
+				data-wp-interactive="core/router"
+				data-wp-class--start-animation="state.navigation.hasStarted"
+				data-wp-class--finish-animation="state.navigation.hasFinished"
+			></div>	<script>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link data-minify="1" rel='stylesheet' id='aal_style-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/wp-auto-affiliate-links/css/style.css?ver=1734707039' media='all' />
+<link data-minify="1" rel='stylesheet' id='wc-blocks-style-css' href='https://aliabdaal.com/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=1734707039' media='all' />
+<script src="https://aliabdaal.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script src="https://aliabdaal.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://aliabdaal.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="https://aliabdaal.com/wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14" id="wp-a11y-js"></script>
+<script defer='defer' src="https://aliabdaal.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.9.1" id="gform_placeholder-js"></script>
+<script id="convertkit-broadcasts-js-extra">
+var convertkit_broadcasts = {"ajax_url":"https:\/\/aliabdaal.com\/wp-admin\/admin-ajax.php","action":"convertkit_broadcasts_render","debug":""};
+</script>
+<script src="https://aliabdaal.com/wp-content/plugins/convertkit/resources/frontend/js/broadcasts.js?ver=2.7.0" id="convertkit-broadcasts-js"></script>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+<script id="convertkit-js-js-extra">
+var convertkit = {"ajaxurl":"https:\/\/aliabdaal.com\/wp-admin\/admin-ajax.php","debug":"","nonce":"5cdd0de76f","subscriber_id":""};
+</script>
+<script src="https://aliabdaal.com/wp-content/plugins/convertkit/resources/frontend/js/convertkit.js?ver=2.7.0" id="convertkit-js-js"></script>
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/checkouts\/|\/wp-json\/autonami-app\/|\/wp-json\/funnelkit-app\/|\/wp-json\/funnelkit-automations\/|\/wp-json\/woofunnels\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout\/??(.*)|\/cart\/?|\/my-account\/??(.*)|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/wp-json\/autonami-app\/*|\/wp-json\/woofunnels\/*|\/wp-json\/funnelkit-automations\/*|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/aliabdaal.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script src="https://aliabdaal.com/wp-content/themes/ali-abdaal/assets/dist/js/front.js?ver=5e050ab196b3dfc3d4f2" id="ali-abdaal-front-scripts-js"></script>
+<script src="https://aliabdaal.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.5.1" id="sourcebuster-js-js"></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https:\/\/aliabdaal.com\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+</script>
+<script src="https://aliabdaal.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.5.1" id="wc-order-attribution-js"></script>
+<div  style="position:absolute;margin:-1px;padding:0;height:1px;width:1px;overflow:hidden;clip-path:inset(50%);border:0;word-wrap:normal !important;"><p id="a11y-speak-intro-text" class="a11y-speak-intro-text" hidden>Notifications</p><div  id="a11y-speak-assertive" class="a11y-speak-region" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div><div  id="a11y-speak-polite" class="a11y-speak-region" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div></div><script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 1) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "1", currentPage: "1", abort: function() { this.preventDefault(); } }]);                if (event && event.defaultPrevented) {                return;         }        const gformWrapperDiv = document.getElementById( "gform_wrapper_1" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_1";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_1" );        let postRenderFired = false;                function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            jQuery( document ).trigger( 'gform_post_render', [1, 1] );            gform.utils.trigger( { event: 'gform/postRender', native: false, data: { formId: 1, currentPage: 1 } } );            gform.utils.trigger( { event: 'gform/post_render', native: false, data: { formId: 1, currentPage: 1 } } );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://aliabdaal.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1734901599 -->
